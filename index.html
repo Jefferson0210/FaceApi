@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación UIDE</title>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js" defer></script>
+    <script src="face-api.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://www.uide.edu.ec/wp-content/uploads/2022/06/UIDE-R-web.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Simulación UIDE- Detección de 
+          </a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="video-container">
+            <video id="video" class="border" autoplay muted width="720" height="540"></video>
+            <canvas id="overlay"></canvas>
+        </div>
+        <div class="controls-container">
+            <div id="results" class="custom-alert">Esperando detección de dos rostros...</div>
+            <button id="captureButton" class="btn btn-primary" disabled>Capturar Referencia</button>
+            <button id="retryButton" class="btn btn-danger" disabled>Volver a Intentar</button>
+        </div>
+    </div>
+</body>
+</html>
